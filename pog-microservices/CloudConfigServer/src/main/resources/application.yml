@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: config-server
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          url:
+#            force-pull: true
+#            clone-on-start: true
+#            default-label:
+management:
+  security:
+    enabled=false:
