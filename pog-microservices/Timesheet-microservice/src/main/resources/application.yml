@@ -12,6 +12,8 @@ spring:
 
 server:
   port: ${PORT:0}
+  serverlet:
+    context-path: /timesheet
 
 eureka:
   instance:

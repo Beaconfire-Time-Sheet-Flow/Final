@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@FeignClient(name = "timesheet-core-service", path = "/", configuration = FeignHeadConfiguration.class)
+@FeignClient(name = "timesheet-service", path = "/timesheet", configuration = FeignHeadConfiguration.class)
 public interface TimesheetClient {
     @GetMapping("all")
     List<Timesheet> getAllTimesheet();
