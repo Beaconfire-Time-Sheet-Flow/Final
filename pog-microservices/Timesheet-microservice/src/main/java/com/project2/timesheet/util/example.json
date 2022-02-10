@@ -1,0 +1,160 @@
+{
+  "userId": 1,
+  "weeks": [{
+    "weekEnding": "2022-01-07",
+    "totoalBillingHours": 10,
+    "totalCompensatedHours": 40,
+    "approvalStatus": "approved",
+    "submissionStatus": "complete",
+    "comment": "",
+    "days": [{
+      "day": "Monday",
+      "date": "2022-01-01",
+      "startTime": "8am",
+      "endTime": "5pm",
+      "totalHours": 9,
+      "isFloating": false,
+      "isHoliday": false,
+      "isVacation": false
+    },
+      {
+        "day": "Tuesday",
+        "date": "2022-01-02",
+        "startTime": "8am",
+        "endTime": "5pm",
+        "totalHours": 9,
+        "isFloating": false,
+        "isHoliday": false,
+        "isVacation": false
+      },
+      {
+        "day": "Wednesday",
+        "date": "2022-01-03",
+        "startTime": "8am",
+        "endTime": "5pm",
+        "totalHours": 9,
+        "isFloating": false,
+        "isHoliday": false,
+        "isVacation": false
+      },
+      {
+        "day": "Thursday",
+        "date": "2022-01-04",
+        "startTime": "8am",
+        "endTime": "5pm",
+        "totalHours": 9,
+        "isFloating": false,
+        "isHoliday": false,
+        "isVacation": false
+      },
+      {
+        "day": "Friday",
+        "date": "2022-01-05",
+        "startTime": "8am",
+        "endTime": "5pm",
+        "totalHours": 9,
+        "isFloating": false,
+        "isHoliday": false,
+        "isVacation": false
+      }
+    ,{
+        "day": "Saturday",
+        "date": "2022-01-06",
+        "startTime": "8am",
+        "endTime": "5pm",
+        "totalHours": 9,
+        "isFloating": false,
+        "isHoliday": false,
+        "isVacation": false
+      },
+      {
+        "day": "Sunday",
+        "date": "2022-01-07",
+        "startTime": "8am",
+        "endTime": "5pm",
+        "totalHours": 9,
+        "isFloating": false,
+        "isHoliday": false,
+        "isVacation": false
+      }]
+  },
+    {
+      "weekEnding": "2022-01-14",
+      "totoalBillingHours": 11,
+      "totalCompensatedHours": 41,
+      "approvalStatus": "approved",
+      "submissionStatus": "complete",
+      "comment": "",
+      "days": [{
+        "day": "Monday",
+        "date": "2022-01-08",
+        "startTime": "8am",
+        "endTime": "5pm",
+        "totalHours": 9,
+        "isFloating": false,
+        "isHoliday": false,
+        "isVacation": false
+      },
+        {
+          "day": "Tuesday",
+          "date": "2022-01-09",
+          "startTime": "8am",
+          "endTime": "5pm",
+          "totalHours": 9,
+          "isFloating": false,
+          "isHoliday": false,
+          "isVacation": false
+        },
+        {
+          "day": "Wednesday",
+          "date": "2022-01-10",
+          "startTime": "8am",
+          "endTime": "5pm",
+          "totalHours": 9,
+          "isFloating": false,
+          "isHoliday": false,
+          "isVacation": false
+        },
+        {
+          "day": "Thursday",
+          "date": "2022-01-11",
+          "startTime": "8am",
+          "endTime": "5pm",
+          "totalHours": 9,
+          "isFloating": false,
+          "isHoliday": false,
+          "isVacation": false
+        },
+        {
+          "day": "Friday",
+          "date": "2022-01-12",
+          "startTime": "8am",
+          "endTime": "5pm",
+          "totalHours": 9,
+          "isFloating": false,
+          "isHoliday": false,
+          "isVacation": false
+        }
+      ,{
+          "day": "Saturday",
+          "date": "2022-01-13",
+          "startTime": "8am",
+          "endTime": "5pm",
+          "totalHours": 9,
+          "isFloating": false,
+          "isHoliday": false,
+          "isVacation": false
+        },
+        {
+          "day": "Sunday",
+          "date": "2022-01-14",
+          "startTime": "8am",
+          "endTime": "5pm",
+          "totalHours": 9,
+          "isFloating": false,
+          "isHoliday": false,
+          "isVacation": false
+        }]
+    }
+  ]
+}

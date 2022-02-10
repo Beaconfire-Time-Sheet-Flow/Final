@@ -7,23 +7,31 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="employee-microservice" />
+        <module name="Timesheet-microservice" />
+        <module name="Employee-microservice" />
         <module name="CloudConfigServer" />
         <module name="EurekaDiscoveryServer" />
+      </profile>
+      <profile name="Annotation profile for Unknown" enabled="true">
+        <sourceOutputDir name="../../target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="wrapper" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="CloudConfigServer" target="1.8" />
-      <module name="employee-microservice" target="1.8" />
+      <module name="Employee-microservice" target="1.8" />
       <module name="EurekaDiscoveryServer" target="1.8" />
+      <module name="Timesheet-microservice" target="1.5" />
       <module name="wrapper" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="CloudConfigServer" options="-parameters" />
+      <module name="Employee-microservice" options="-parameters" />
       <module name="EurekaDiscoveryServer" options="-parameters" />
-      <module name="employee-microservice" options="-parameters" />
     </option>
   </component>
 </project>

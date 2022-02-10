@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Employee-microservice:war">
+    <output-path>$PROJECT_DIR$/Employee-microservice/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>false</exploded>
+        <module>Employee-microservice</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="archive" name="employee-microservice-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Employee-microservice:war exploded" />
+    </root>
+  </artifact>
+</component>
