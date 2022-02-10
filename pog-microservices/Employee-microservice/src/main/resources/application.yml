@@ -14,8 +14,6 @@ spring:
 
 server:
   port: ${PORT:0}
-  serverlet:
-   context-path: /employee
 
 eureka:
   instance:

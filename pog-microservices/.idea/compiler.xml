@@ -8,7 +8,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="timesheet" />
+        <module name="Timesheet-server" />
         <module name="employee-microservice" />
         <module name="CompositeServer" />
         <module name="CloudConfigServer" />
@@ -21,13 +21,16 @@
       <module name="employee-microservice" target="1.8" />
       <module name="EurekaDiscoveryServer" target="1.8" />
       <module name="timesheet" target="11" />
+      <module name="Timesheet-server" target="11" />
+      <module name="wrapper" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="CloudConfigServer" options="-parameters" />
-      <module name="CompositeServer" options="-parameters --add-modules java.base" />
+      <module name="CompositeServer" options="-parameters" />
       <module name="EurekaDiscoveryServer" options="-parameters" />
+      <module name="Timesheet-server" options="-parameters" />
       <module name="employee-microservice" options="-parameters" />
       <module name="timesheet" options="-parameters --add-modules java.sql,java.base" />
     </option>
