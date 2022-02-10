@@ -3,11 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CloudConfigServer/CloudConfigServer.iml" filepath="$PROJECT_DIR$/CloudConfigServer/CloudConfigServer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/employee-microservice/Employee-microservice.iml" filepath="$PROJECT_DIR$/employee-microservice/Employee-microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CompositeServer/CompositeServer.iml" filepath="$PROJECT_DIR$/CompositeServer/CompositeServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/EurekaDiscoveryServer/EurekaDiscoveryServer.iml" filepath="$PROJECT_DIR$/EurekaDiscoveryServer/EurekaDiscoveryServer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Timesheet-microservice/Timesheet-microservice.iml" filepath="$PROJECT_DIR$/Timesheet-microservice/Timesheet-microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Employee-microservice/employee-microservice.iml" filepath="$PROJECT_DIR$/Employee-microservice/employee-microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/pog-microservices.iml" filepath="$PROJECT_DIR$/pog-microservices.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Timesheet-microservice/.mvn/wrapper/wrapper.iml" filepath="$PROJECT_DIR$/Timesheet-microservice/.mvn/wrapper/wrapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Timesheet-microservice/timesheet.iml" filepath="$PROJECT_DIR$/Timesheet-microservice/timesheet.iml" />
     </modules>
   </component>
 </project>

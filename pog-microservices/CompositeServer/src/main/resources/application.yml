@@ -1,0 +1,8 @@
+server:
+  port: 8084
+  servlet:
+    context-path: /management
+
+spring:
+  application:
+    name: management-composite-service
