@@ -4,8 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CloudConfigServer/CloudConfigServer.iml" filepath="$PROJECT_DIR$/CloudConfigServer/CloudConfigServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/EurekaDiscoveryServer/EurekaDiscoveryServer.iml" filepath="$PROJECT_DIR$/EurekaDiscoveryServer/EurekaDiscoveryServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/employee-microservice/employee-microservice.iml" filepath="$PROJECT_DIR$/employee-microservice/employee-microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/pog-microservices.iml" filepath="$PROJECT_DIR$/pog-microservices.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CloudConfigServer/.mvn/wrapper/wrapper.iml" filepath="$PROJECT_DIR$/CloudConfigServer/.mvn/wrapper/wrapper.iml" />
     </modules>
   </component>
 </project>

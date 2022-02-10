@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/CloudConfigServer" />
+    <file type="web" url="file://$PROJECT_DIR$/employee-microservice" />
     <file type="web" url="file://$PROJECT_DIR$/EurekaDiscoveryServer" />
   </component>
   <component name="MavenProjectsManager">
@@ -8,6 +10,7 @@
       <list>
         <option value="$PROJECT_DIR$/EurekaDiscoveryServer/pom.xml" />
         <option value="$PROJECT_DIR$/CloudConfigServer/pom.xml" />
+        <option value="$PROJECT_DIR$/employee-microservice/pom.xml" />
       </list>
     </option>
   </component>
