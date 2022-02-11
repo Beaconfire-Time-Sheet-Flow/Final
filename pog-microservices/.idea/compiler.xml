@@ -12,6 +12,7 @@
         <module name="employee-microservice" />
         <module name="CompositeServer" />
         <module name="CloudConfigServer" />
+        <module name="Gateway" />
         <module name="EurekaDiscoveryServer" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
       <module name="CompositeServer" target="11" />
       <module name="employee-microservice" target="1.8" />
       <module name="EurekaDiscoveryServer" target="1.8" />
+      <module name="Gateway" target="11" />
       <module name="timesheet" target="11" />
       <module name="Timesheet-server" target="11" />
       <module name="wrapper" target="1.5" />
@@ -30,6 +32,7 @@
       <module name="CloudConfigServer" options="-parameters" />
       <module name="CompositeServer" options="-parameters" />
       <module name="EurekaDiscoveryServer" options="-parameters" />
+      <module name="Gateway" options="-parameters" />
       <module name="Timesheet-server" options="-parameters" />
       <module name="employee-microservice" options="-parameters" />
       <module name="timesheet" options="-parameters --add-modules java.sql,java.base" />
