@@ -9,6 +9,8 @@
       <module fileurl="file://$PROJECT_DIR$/Timesheet-server/Timesheet-server.iml" filepath="$PROJECT_DIR$/Timesheet-server/Timesheet-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/Employee-microservice/employee-microservice.iml" filepath="$PROJECT_DIR$/Employee-microservice/employee-microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/pog-microservices.iml" filepath="$PROJECT_DIR$/pog-microservices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sso-server/sso-server.iml" filepath="$PROJECT_DIR$/sso-server/sso-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sso-server/.mvn/wrapper/wrapper.iml" filepath="$PROJECT_DIR$/sso-server/.mvn/wrapper/wrapper.iml" />
     </modules>
   </component>
 </project>
