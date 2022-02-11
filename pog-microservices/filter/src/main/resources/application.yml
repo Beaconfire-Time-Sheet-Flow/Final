@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: filter
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+
+  datasource:
+    username: admin
+    password: 12345678
+    url: jdbc:mysql://database-1.ctlrxrcqpjop.us-east-1.rds.amazonaws.com:3306/profile
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+      show-sql: true
+      hibernate:
+        ddl-auto: update
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQLDialect
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+
+services:
+  auth:
+    login: http://localhost:9999/auth/login
+
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka
