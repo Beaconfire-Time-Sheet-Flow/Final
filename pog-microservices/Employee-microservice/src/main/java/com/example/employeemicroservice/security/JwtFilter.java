@@ -15,12 +15,12 @@ public class JwtFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-        //String token = CookieUtil.getValue(request, JwtConstant.JWT_COOKIE_NAME);
-        HttpServletRequest req = (HttpServletRequest) request;
-
-        String authorization = req.getHeader("Authorization");
-
-        String token = authorization.substring(7);
+        String token = CookieUtil.getValue(request, JwtConstant.JWT_COOKIE_NAME);
+//        HttpServletRequest req = (HttpServletRequest) request;
+//
+//        String authorization = req.getHeader("Authorization");
+//
+//        String token = authorization.substring(7);
         System.out.println(token);
         if (token!=null) {
             System.out.println("+++++++++JwtFilter++++++++");

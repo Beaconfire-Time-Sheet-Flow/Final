@@ -17,4 +17,5 @@ public class WeeksheetDTO {
     private String approvalStatus;
     private int floatingDaysLeft;
     private int vacationDaysLeft;
+    private String fileURL;
 }

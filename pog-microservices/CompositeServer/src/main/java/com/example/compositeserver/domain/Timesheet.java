@@ -18,7 +18,7 @@ public class Timesheet {
     private String id;
 
     private int userId;
-    private List<Daysheet> defaultTemplate;
+    private List<Daysheet> days;
     private List<Weeksheet> weeks;
 
 

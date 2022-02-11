@@ -89,7 +89,7 @@ public class TimesheetService {
                 return getDaysheetByWeekEnding(weeksheet);
             }
         }
-        return getDaysheetByTemplate(timesheet.getDefaultTemplate(), weekEnding);
+        return getDaysheetByTemplate(timesheet.getDays(), weekEnding);
     }
 
     //@Transactional
@@ -123,7 +123,7 @@ public class TimesheetService {
     @Transactional
     public WeeksheetTSResponse getDefaultTemplate(Timesheet timesheet, String weekEnding, int userId) {
         WeeksheetTSResponse weeksheetTSResponse = new WeeksheetTSResponse();
-        List<Daysheet> defaultTemplate = timesheet.getDefaultTemplate();
+        List<Daysheet> defaultTemplate = timesheet.getDays();
         List<DaysheetDTO> daysheetDTOS = new ArrayList<>();
 
         List<String> dates = new ArrayList<>();
@@ -203,6 +203,15 @@ public class TimesheetService {
     Timesheet timesheetToDomain(Timesheet timesheet) {
         List<Weeksheet> weeksheets = timesheet.getWeeks();
         return timesheet;
+    }
+    
+    @Transactional
+    public Timesheet updateDefaultTemplate(Timesheet timesheet) {
+        System.out.println("User Id: " + timesheet.toString());
+    	Timesheet oldTimeSheet = findTimesheetByUserId(timesheet.getUserId());
+    	oldTimeSheet.setDays(timesheet.getDays());
+        timesheetRepository.save(oldTimeSheet);
+        return timesheetToDomain(timesheet);
     }
 
     @Transactional

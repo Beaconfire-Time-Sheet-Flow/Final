@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+
 @FeignClient(name = "timesheet-service")
 public interface TimesheetClient {
     @GetMapping("timesheet-service/all")
@@ -38,4 +39,7 @@ public interface TimesheetClient {
     @GetMapping("timesheet-service/create-week-sheet")
     WeeksheetTSResponse getDefualtTemplate(@RequestBody Timesheet timesheet,
                                             @RequestParam String weekEnding);
+
+    @PutMapping("timesheet-service/update-template")
+    Timesheet updateDefaultTemplate(@RequestBody Timesheet timesheet);
 }

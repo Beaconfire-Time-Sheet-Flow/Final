@@ -28,4 +28,6 @@ public class Weeksheet {
 
     private List<Daysheet> days;
 
+    private String fileURL;
+
 }

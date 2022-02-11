@@ -32,13 +32,13 @@ public class TimesheetController {
         this.timesheetService = timesheetService;
     }
 
-    @GetMapping("all")
+    @GetMapping("/all")
     @ApiOperation(value = "List All Timesheet", response = Timesheet.class)
     public List<Timesheet> getAllTimesheet() {
         return timesheetService.getAllTimesheet();
     }
 
-    @GetMapping("fetch")
+    @GetMapping("/fetch")
     @ApiOperation(value = "Get the Timesheet for current user", response = Timesheet.class)
     public ResponseEntity<Timesheet> getTimesheet(@RequestParam Integer userId) {
         if(userId == null) {
@@ -50,7 +50,7 @@ public class TimesheetController {
         return new ResponseEntity<>(timesheet, HttpStatus.OK);
     }
 
-    @PostMapping("fetch-summary")
+    @PostMapping("/fetch-summary")
     @ApiOperation(value = "Get the summary records for current user", response = WeeksheetsTSResponse.class)
     public ResponseEntity<WeeksheetsTSResponse> getSummaryRecords(@RequestBody WeeksheetsTSRequest weeksheetsTSRequest) {
         int userId = weeksheetsTSRequest.getUserId();
@@ -94,6 +94,13 @@ public class TimesheetController {
             @RequestParam int userId) {
         WeeksheetTSResponse res = timesheetService.updateSingleWeeksheet(weeksheet, weekEnding, userId);
         return new ResponseEntity<WeeksheetTSResponse>(res, HttpStatus.OK);
+    }
+    
+    @PutMapping("/update-template")
+    @ApiOperation(value = "update default template", response = WeeksheetTSResponse.class)
+    public ResponseEntity<Timesheet> updateDefaultTemplate(@RequestBody Timesheet timesheet) {
+        Timesheet res = timesheetService.updateDefaultTemplate(timesheet);
+        return new ResponseEntity<Timesheet>(res, HttpStatus.OK);
     }
 
     @GetMapping("/create-week-sheet")

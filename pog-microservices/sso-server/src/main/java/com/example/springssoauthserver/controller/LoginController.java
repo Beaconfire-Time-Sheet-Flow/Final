@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.*;
 
 @Controller
+@CrossOrigin(origins = "*")
 public class LoginController {
 
     @Autowired

@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 @Api(tags = {"Employee - core service"})
 public class ProfileController {
     private ProfileService profileService;
@@ -22,6 +23,7 @@ public class ProfileController {
         return ResponseEntity.ok().body(profileService.getEmployeeByUserId(id));
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @PutMapping("/updateEmployee")
     public ResponseEntity<String> updateEmployeeById(@RequestBody ProfileDomain profileDomain){
         return ResponseEntity.ok().body(profileService.updateEmployeeById(profileDomain));

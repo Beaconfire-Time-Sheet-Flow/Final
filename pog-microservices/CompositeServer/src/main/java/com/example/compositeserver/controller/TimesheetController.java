@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "*")
 @Api(tags = {"Timesheet - core service"})
 public class TimesheetController {
     private TimesheetService timesheetService;
@@ -61,5 +62,10 @@ public class TimesheetController {
     public ResponseEntity<WeeksheetTSResponse> getDefualtTemplate(@RequestBody Timesheet timesheet,
                                            @RequestParam String weekEnding){
         return ResponseEntity.ok().body(timesheetService.getDefualtTemplate(timesheet,weekEnding));
+    }
+
+    @PutMapping("/update-template")
+    public ResponseEntity<Timesheet> updateDefaultTemplate(@RequestBody Timesheet timesheet){
+        return ResponseEntity.ok().body(timesheetService.updateDefaultTemplate(timesheet));
     }
 }

@@ -53,4 +53,8 @@ public class TimesheetService {
     public WeeksheetTSResponse getDefualtTemplate(Timesheet timesheet, String weekEnding){
         return timesheetClient.getDefualtTemplate(timesheet,weekEnding);
     };
+
+    public Timesheet updateDefaultTemplate(Timesheet timesheet){
+        return timesheetClient.updateDefaultTemplate(timesheet);
+    }
 }

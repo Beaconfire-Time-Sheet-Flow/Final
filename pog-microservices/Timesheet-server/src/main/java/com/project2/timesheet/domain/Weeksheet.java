@@ -25,6 +25,8 @@ public class Weeksheet {
     private int floatingDaysLeft;
     
     private int vacationDaysLeft;
+    
+    private String fileURL;
 
     private List<Daysheet> days;
 
