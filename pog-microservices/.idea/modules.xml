@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CloudConfigServer/CloudConfigServer.iml" filepath="$PROJECT_DIR$/CloudConfigServer/CloudConfigServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/CompositeServer/CompositeServer.iml" filepath="$PROJECT_DIR$/CompositeServer/CompositeServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CloudConfigServer/ConfigServer.iml" filepath="$PROJECT_DIR$/CloudConfigServer/ConfigServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/EurekaDiscoveryServer/EurekaDiscoveryServer.iml" filepath="$PROJECT_DIR$/EurekaDiscoveryServer/EurekaDiscoveryServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Gateway/Gateway.iml" filepath="$PROJECT_DIR$/Gateway/Gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/Timesheet-server/Timesheet-server.iml" filepath="$PROJECT_DIR$/Timesheet-server/Timesheet-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/filter/demo.iml" filepath="$PROJECT_DIR$/filter/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Employee-microservice/employee-microservice.iml" filepath="$PROJECT_DIR$/Employee-microservice/employee-microservice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/filter/filter.iml" filepath="$PROJECT_DIR$/filter/filter.iml" />
       <module fileurl="file://$PROJECT_DIR$/pog-microservices.iml" filepath="$PROJECT_DIR$/pog-microservices.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sso-server/sso-server.iml" filepath="$PROJECT_DIR$/sso-server/sso-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/filter/.mvn/wrapper/wrapper.iml" filepath="$PROJECT_DIR$/filter/.mvn/wrapper/wrapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sso-server/spring-sso-auth-server.iml" filepath="$PROJECT_DIR$/sso-server/spring-sso-auth-server.iml" />
     </modules>
   </component>
 </project>

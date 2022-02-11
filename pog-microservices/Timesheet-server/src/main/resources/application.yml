@@ -9,7 +9,11 @@ spring:
       port: 27017
       database: timesheet
       auto-index-creation: true
-    
+
+services:
+  auth:
+    login: http://localhost:9999/auth/login
+
 server:
   port: 9090
     

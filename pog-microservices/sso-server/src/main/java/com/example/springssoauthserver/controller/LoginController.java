@@ -39,7 +39,7 @@ public class LoginController {
         CookieUtil.create(res, JwtConstant.JWT_COOKIE_NAME, jwt, false, -1, "localhost");
 
 //        model.addAttribute("token", jwt);
-        return "redirect:" + redirect;
+        return "redirect:" + "http://localhost:3000/summary";
     }
 
 

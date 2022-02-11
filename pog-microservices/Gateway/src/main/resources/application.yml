@@ -8,14 +8,18 @@ spring:
           uri: lb://sso-server
           predicates:
             - Path=/**
-        - id: filter
-          uri: lb://filter
+        - id: employee-service
+          uri: lb://employee-service
           predicates:
-            - Path=/filter/**
-#        - id: composite-service
-#          uri: lb://composite-service
-#          predicates:
-#            - Path=/composite-service/**
+            - Path=/employee-service/**
+        - id: management-composite-service
+          uri: lb://management-composite-service
+          predicates:
+            - Path=/**
+        - id: timesheet-service
+          uri: lb://timesheet-service
+          predicates:
+            - Path=/timesheet-service/**
 
 server:
   port: 9000

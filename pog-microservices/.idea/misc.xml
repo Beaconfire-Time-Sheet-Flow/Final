@@ -5,6 +5,7 @@
     <file type="web" url="file://$PROJECT_DIR$/CompositeServer" />
     <file type="web" url="file://$PROJECT_DIR$/Employee-microservice" />
     <file type="web" url="file://$PROJECT_DIR$/EurekaDiscoveryServer" />
+    <file type="web" url="file://$PROJECT_DIR$/filter" />
     <file type="web" url="file://$PROJECT_DIR$/sso-server" />
   </component>
   <component name="MavenProjectsManager">

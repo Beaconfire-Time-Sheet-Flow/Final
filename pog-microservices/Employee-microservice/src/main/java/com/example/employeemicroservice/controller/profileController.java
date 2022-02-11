@@ -3,7 +3,6 @@ package com.example.employeemicroservice.controller;
 import com.example.employeemicroservice.domain.ContactDomain;
 import com.example.employeemicroservice.domain.EmergencyContactDomain;
 import com.example.employeemicroservice.domain.ProfileDomain;
-import com.example.employeemicroservice.entity.Account;
 import com.example.employeemicroservice.entity.Contact;
 import com.example.employeemicroservice.entity.EmergencyContact;
 import com.example.employeemicroservice.service.ProfileService;
@@ -11,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Optional;
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("employee-service")
@@ -19,6 +17,12 @@ public class profileController {
 
     @Autowired
     private ProfileService profileService;
+
+    @GetMapping("/suc")
+    public String init(){
+        System.out.println("1");
+        return "success";
+    }
 
     @GetMapping("/getEmployee")
             //@RequestHeader("userName") String userName

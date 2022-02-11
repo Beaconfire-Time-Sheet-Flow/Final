@@ -1,6 +1,5 @@
 package com.example.employeemicroservice.repository;
 
-import com.example.employeemicroservice.entity.Contact;
 import com.example.employeemicroservice.entity.EmergencyContact;
 import org.springframework.data.jpa.repository.JpaRepository;
 

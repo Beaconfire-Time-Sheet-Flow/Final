@@ -2,7 +2,6 @@ package com.example.employeemicroservice.service;
 
 import com.example.employeemicroservice.domain.ContactDomain;
 import com.example.employeemicroservice.domain.EmergencyContactDomain;
-import com.example.employeemicroservice.domain.ProfileDomain;
 import com.example.employeemicroservice.entity.Account;
 import com.example.employeemicroservice.entity.Contact;
 import com.example.employeemicroservice.entity.EmergencyContact;
@@ -13,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -25,6 +25,16 @@ public class ProfileService {
 
     @Autowired
     private EmergencyContactRepository emergencyContactRepository;
+
+    public List<Account> checkLogin(String username, String password){
+        List<Account> res = accountRepository.getAccountsByUserName(username);
+        if(res.size() == 0)
+            return null;
+        if(res.get(0).getPassword().equals(password))
+            return res;
+        else
+            return null;
+    }
 
     @Transactional
     public Optional<Account> getEmployeeById(Integer id){
