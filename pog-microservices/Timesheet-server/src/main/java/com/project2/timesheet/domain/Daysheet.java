@@ -1,8 +1,6 @@
 package com.project2.timesheet.domain;
 
-import org.springframework.data.mongodb.core.mapping.Document;
 import lombok.*;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @Getter
 @Setter

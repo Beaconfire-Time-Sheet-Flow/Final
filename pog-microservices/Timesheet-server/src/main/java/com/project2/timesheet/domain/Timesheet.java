@@ -1,14 +1,5 @@
 package com.project2.timesheet.domain;
 
-import com.project2.timesheet.domain.Daysheet;
-import lombok.*;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
-import java.util.List;
-import java.util.Map;
-
 import com.querydsl.core.annotations.QueryEntity;
 import lombok.*;
 import org.springframework.data.annotation.Id;
@@ -30,7 +21,7 @@ public class Timesheet {
     private String id;
 
     private int userId;
-    private List<Daysheet> days;
+    private List<Daysheet> defaultTemplate;
     private List<Weeksheet> weeks;
 
 

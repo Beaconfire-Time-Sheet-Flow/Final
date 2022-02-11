@@ -1,6 +1,7 @@
 package com.example.compositeserver.controller;
 
 import com.example.compositeserver.domain.Timesheet;
+import com.example.compositeserver.domain.Weeksheet;
 import com.example.compositeserver.domain.req.WeeksheetTSRequest;
 import com.example.compositeserver.domain.req.WeeksheetsTSRequest;
 import com.example.compositeserver.domain.res.WeeksheetTSResponse;
@@ -28,7 +29,7 @@ public class TimesheetController {
         return timesheetService.getAllTimesheet();
     }
 
-    @GetMapping("fetch")
+    @GetMapping("/fetch")
     public ResponseEntity<Timesheet> getTimesheet(@RequestParam Integer userId) {
         return ResponseEntity.ok().body(timesheetService.getTimesheet(userId));
     }
@@ -43,5 +44,22 @@ public class TimesheetController {
         return ResponseEntity.ok().body(timesheetService.getWeeklyRecord(weeksheetTSRequest));
     }
 
-    ;
+    @PutMapping("update-timesheet")
+    public ResponseEntity<Timesheet> updateTimesheet(@RequestBody Timesheet timesheet){
+        return ResponseEntity.ok().body(timesheetService.updateTimesheet(timesheet));
+    }
+
+    @PutMapping("update-weeksheet")
+    public ResponseEntity<WeeksheetTSResponse> updateSingleWeeksheet(
+            @RequestBody Weeksheet weeksheet,
+            @RequestParam String weekEnding,
+            @RequestParam int userId){
+        return ResponseEntity.ok().body(timesheetService.updateSingleWeeksheet(weeksheet,weekEnding,userId));
+    }
+
+    @GetMapping("create-week-sheet")
+    public ResponseEntity<WeeksheetTSResponse> getDefualtTemplate(@RequestBody Timesheet timesheet,
+                                           @RequestParam String weekEnding){
+        return ResponseEntity.ok().body(timesheetService.getDefualtTemplate(timesheet,weekEnding));
+    }
 }
