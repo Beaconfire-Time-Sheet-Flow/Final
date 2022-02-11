@@ -2,6 +2,8 @@ package com.example.compositeserver.domain.dto;
 
 import lombok.*;
 
+@Getter
+@Setter
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

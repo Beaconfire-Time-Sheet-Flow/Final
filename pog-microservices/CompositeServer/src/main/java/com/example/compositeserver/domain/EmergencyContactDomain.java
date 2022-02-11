@@ -2,6 +2,8 @@ package com.example.compositeserver.domain;
 
 import lombok.*;
 
+@Getter
+@Setter
 @Data
 @ToString
 @Builder
