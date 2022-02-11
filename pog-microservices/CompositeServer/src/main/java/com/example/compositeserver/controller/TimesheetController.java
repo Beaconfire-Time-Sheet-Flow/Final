@@ -23,7 +23,7 @@ public class TimesheetController {
         this.timesheetService = timesheetService;
     }
 
-    @GetMapping("all")
+    @GetMapping("/all")
     public List<Timesheet> getAllTimesheet() {
         return timesheetService.getAllTimesheet();
     }

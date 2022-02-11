@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(name = "employee-service", configuration = FeignHeadConfiguration.class)
+@FeignClient(name = "employee-service")
 public interface ProfileClient {
     @GetMapping("employee-service/getEmployee")
     ProfileDomain getEmployeeByUserId(@RequestParam Integer id);
 
-    @PutMapping("/updateEmployee")
+    @PutMapping("employee-service/updateEmployee")
     String updateEmployeeById(@RequestBody ProfileDomain profileDomain);
 }

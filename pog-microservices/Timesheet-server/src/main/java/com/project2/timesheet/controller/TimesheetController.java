@@ -23,7 +23,7 @@ import java.util.List;
 
 @CrossOrigin(origins = "*")
 @RestController
-@Api(tags = {"Timesheet - core service"})
+@RequestMapping("timesheet-service")
 public class TimesheetController {
 
     private TimesheetService timesheetService;

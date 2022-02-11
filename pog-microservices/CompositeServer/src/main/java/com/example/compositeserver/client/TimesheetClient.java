@@ -14,12 +14,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@FeignClient(name = "timesheet-service", configuration = FeignHeadConfiguration.class)
+@FeignClient(name = "timesheet-service")
 public interface TimesheetClient {
-    @GetMapping("all")
+    @GetMapping("timesheet-service/all")
     List<Timesheet> getAllTimesheet();
 
-    @GetMapping("fetch")
+    @GetMapping("timesheet/fetch")
     Timesheet getTimesheet(@RequestParam Integer userId);
 
     @PostMapping("fetch-summary")
