@@ -12,6 +12,7 @@
         <module name="employee-microservice" />
         <module name="spring-sso-auth-server" />
         <module name="Gateway" />
+        <module name="CloudConfigServer" />
         <module name="ConfigServer" />
         <module name="demo" />
         <module name="CompositeServer" />
@@ -19,7 +20,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11">
-      <module name="CloudConfigServer" target="1.8" />
+      <module name="CloudConfigServer" target="1.6" />
       <module name="CompositeServer" target="11" />
       <module name="ConfigServer" target="1.8" />
       <module name="demo" target="11" />
